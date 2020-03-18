@@ -1,0 +1,140 @@
+.debug {
+	@apply border border-4 border-red-700;
+}
+
+.debug-blue {
+	@apply border border-4 border-blue-700;
+}
+
+@tailwind base;
+@tailwind components;
+
+/* Global */
+.sidebar {
+	flex: 1 3 14vh;
+}
+
+.main-area {
+	flex: 2 1 45%;
+}
+
+.right-side {
+	flex: 1 2 30%;
+}
+
+a:hover {
+	@apply underline;
+}
+
+a {
+	@apply font-normal text-brand no-underline;
+}
+
+h1 {
+	@apply text-gray-900;
+}
+
+/* Side bar */
+
+.menu-item {
+	@apply flex px-3 py-2 my-1 items-baseline rounded-full;
+}
+
+.menu-item:hover {
+	@apply bg-green-100;
+}
+
+.menu-item i {
+	@apply text-gray-900 text-icon font-thin;
+}
+
+.menu-item i:hover {
+	@apply text-blue-500 no-underline;
+}
+.menu-item span {
+	@apply ml-4 text-head  font-bold text-gray-900;
+}
+
+.menu-item span:hover {
+	@apply no-underline;
+}
+
+/* Button */
+
+.btn {
+	@apply text-brand bg-transparent border border-brand rounded-full;
+}
+
+.btn:hover {
+	@apply bg-blue-100;
+}
+
+.tap {
+	@apply w-full py-2 text-xs font-bold text-gray-600;
+}
+
+.tap:hover {
+	@apply bg-green-100 text-brand;
+}
+
+.tap-active {
+	@apply text-brand border-b-2 border-brand;
+}
+
+@tailwind utilities;
+
+/* Media Queries */
+
+@screen md {
+	.sidebar {
+		flex-basis: 14vh;
+	}
+	.main-area {
+		flex-basis: 43%;
+	}
+}
+
+@screen lg {
+	.sidebar {
+		flex-basis: 24%;
+	}
+}
+
+@screen menubreak {
+	.sidebar {
+		flex-basis: 20vh;
+	}
+}
+
+@screen rightsidebreak {
+	.right-side {
+		display: block !important;
+		flex: 1 1 2%;
+	}
+}
+
+@screen afterRightSideBreak {
+	.right-side {
+		display: block !important;
+		flex: 1 1 2%;
+	}
+}
+
+@screen colbreak {
+	.menu-item span {
+		@apply hidden;
+	}
+	.menu-item i {
+		@apply h-full w-full text-2xl;
+	}
+}
+
+@screen xl {
+	.menu-item span {
+		@apply block;
+	}
+
+	.menu-item i {
+		@apply h-6 w-6 text-icon;
+	}
+}

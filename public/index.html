@@ -1,0 +1,619 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Twitter / Home</title>
+		<link rel="stylesheet" href="./build/styles.css" />
+	</head>
+
+	<body class="antialiased text-gray-900">
+		<!-- app -->
+		<div class="flex colView:flex-col colbreak:flex-row min-h-screen">
+			<!-- Sidebar -->
+			<div class="sidebar colView:order-1 h-screen md:flex-grow xs:flex-grow-0 flex-no-wrap bg-white sticky top-0">
+				<!-- inner -->
+				<div class="flex flex-col items-center  justify-start h-full sticky top-0">
+					<!-- Logo and Menu hamburger -->
+					<div class="colbreak:hidden p-2 flex-no-wrap mt-1 items-baseline colView:flex justify-between w-full">
+						<!-- Twitter Logo -->
+						<i class="p-2 text-brand text-2xl fab fa-twitter"></i>
+
+						<!-- hamburger Menu -->
+						<i class="p-2 text-gray-900 text-2xl fal fa-bars"></i>
+					</div>
+
+					<!-- Menu Items in Col view-->
+					<div class="colView:flex colView:flex-col colbreak:hidden">
+						<a class="menu-item hover:no-underline" href="#">
+							<i class="fal fa-home"></i>
+							<span>Home</span>
+						</a>
+
+						<a class="menu-item hover:no-underline" href="#">
+							<i class="fal fa-hashtag"></i>
+							<span>Explore</span>
+						</a>
+
+						<a class="menu-item hover:no-underline" href="#">
+							<i class="fal fa-bell"></i>
+							<span class="">Notifications</span>
+						</a>
+
+						<a class="menu-item hover:no-underline" href="#">
+							<i class="fal fa-envelope"></i>
+							<span>Messages</span>
+						</a>
+
+						<a class="menu-item hover:no-underline" href="#">
+							<i class="fal fa-bookmark"></i>
+							<span>Bookmark</span>
+						</a>
+
+						<a class="menu-item hover:no-underline" href="#">
+							<i class="fal fa-list-alt"></i>
+							<span>Lists</span>
+						</a>
+
+						<a class="menu-item hover:no-underline" href="#">
+							<i class="fal fa-user-circle"></i>
+							<span>Profile</span>
+						</a>
+					</div>
+
+					<!-- Twitter Logo -->
+					<div class="flex flex-col mt-1 items-center colView:hidden w-full">
+						<i class="p-2  text-brand text-2xl hover:bg-green-100 rounded-full fab fa-twitter"></i>
+					</div>
+
+					<!-- Menu Items -->
+					<div class="colView:hidden">
+						<a class="menu-item hover:no-underline" href="#">
+							<i class="far fa-home"></i>
+							<span>Home</span>
+						</a>
+
+						<a class="menu-item hover:no-underline" href="#">
+							<i class="far fa-hashtag"></i>
+							<span>Explore</span>
+						</a>
+
+						<a class="menu-item hover:no-underline" href="#">
+							<i class="far fa-bell"></i>
+							<span class="">Notifications</span>
+						</a>
+
+						<a class="menu-item hover:no-underline" href="#">
+							<i class="far fa-envelope"></i>
+							<span>Messages</span>
+						</a>
+
+						<a class="menu-item hover:no-underline" href="#">
+							<i class="far fa-bookmark"></i>
+							<span>Bookmark</span>
+						</a>
+
+						<a class="menu-item hover:no-underline" href="#">
+							<i class="far fa-list-alt"></i>
+							<span>Lists</span>
+						</a>
+
+						<a class="menu-item hover:no-underline" href="#">
+							<i class="far fa-user-circle"></i>
+							<span>Profile</span>
+						</a>
+
+						<a class="menu-item hover:no-underline" href="#">
+							<i class="fas fa-ellipsis-h-alt"></i>
+							<span>More</span>
+						</a>
+					</div>
+
+					<div class="xl:py-2 xl:px-15 colView:hidden colbreak:p-3 mt-3 hover:bg-blue-500 rounded-full bg-brand flex">
+						<button class="text-white font-bold text-xs">
+							<span class="xl:block colbreak:hidden ">Tweet</span>
+							<span class="colbreak:block xl:hidden"><i class="fas fa-feather-alt text-white"></i></span>
+						</button>
+					</div>
+				</div>
+				<!-- /inner -->
+			</div>
+			<!-- End of Sidebar -->
+
+			<!-- Main Area -->
+			<div
+				style="height: 500vh;"
+				class="relative colView:order-2 main-area border-indigo-200 border flex-col min-h-screen bg-white"
+			>
+				<!-- sticky header -->
+				<div class="flex relative z-20 shadow-sm h-12 w-full flex-auto bg-white sticky top-0">
+					<!-- content -->
+					<i class="ml-1 p-4 my-auto text-base hover:bg-green-100 rounded-full text-brand fas fa-arrow-left"></i>
+
+					<div class="ml-5 mt-1">
+						<h1 class="text-base font-extrabold">Tailwind CSS</h1>
+						<span class="text-sm text-gray-600">360 Tweets</span>
+					</div>
+				</div>
+
+				<!-- content -->
+				<div class="flex flex-col border h-full border-indigo-100">
+					<!-- hero -->
+					<div class="w-full">
+						<img class="h-40 object-cover min-w-full" src="./img/hero.jpg" alt="Hero Background" />
+					</div>
+
+					<!-- circle image -->
+					<div class="flex justify-between w-full ">
+						<img
+							class="relative h-27 border border-gray-200 shadow-md -mt-15 ml-3 rounded-full"
+							src="./img/logo.jpg"
+							alt="Logo"
+						/>
+
+						<!-- 2 buttons -->
+						<div class="mr-2 mt-2">
+							<button class="btn p-2">
+								<i class="fas fa-ellipsis-h-alt"></i>
+							</button>
+
+							<button class="btn sticky top-0  font-bold text-xs px-4 py-1 ">
+								Follow
+							</button>
+						</div>
+					</div>
+
+					<!-- title and handel -->
+					<div class="ml-4 mt-2 text-justify leading-5">
+						<h1 class="font-extrabold">Tailwind CSS</h1>
+						<span class="text-xs text-gray-600">@tailwindcss</span>
+					</div>
+
+					<!-- group padding -->
+					<div class="pl-3 pr-1 py-2">
+						<!-- bio -->
+						<div class="text-sm text-gray-900 tracking-tight font-normal">
+							<p class="break-normal">
+								A utility-first CSS framework for rapid UI develont. Created by
+								<a href="#">@adamwan</a>, developed in collaboration with <a href="#">@reinink</a>,
+								<a href="#">@davidhemphill</a>, and <a href="#">@steveschoger</a>.
+							</p>
+						</div>
+
+						<!-- links and info -->
+						<div class="flex mt-2 text-sm text-gray-700 tracking-tight font-normal justify-start">
+							<div>
+								<i class="text-xs text-gray-500 far fa-link"></i>
+								<a class="ml-1" href="#">tailwindcss.com</a>
+							</div>
+							<div class="ml-2">
+								<i class="text-xs text-gray-500 far fa-birthday-cake"></i>
+								<span class="ml-1" href="#">Born October 31</span>
+							</div>
+							<div class="ml-2">
+								<i class="text-xs text-gray-500 fal fa-calendar-alt"></i>
+								<span class="ml-1" href="#">Joined August 2017</span>
+							</div>
+						</div>
+
+						<!-- following info -->
+						<div class="mt-1 text-xs">
+							<a class="text-gray-900 " href="#"
+								><span class="text-gray-900 font-bold">4</span>
+								<span class="font-normal text-gray-600">Following</span></a
+							>
+							<a class="text-gray-900 ml-4" href="#"
+								><span class="text-gray-900 font-bold">30.6K</span>
+								<span class="font-normal text-gray-600">Followers</span></a
+							>
+						</div>
+
+						<!-- Followed by -->
+						<div class="flex  items-baseline relative mt-2">
+							<img class="absolute h-5" src="./img/logo2.jpg" alt="follower" />
+							<a class="ml-6 font-normal text-sm text-gray-600" href="#">
+								Followed by Vue.js, Tim MacDonald, and 17 others you follow</a
+							>
+						</div>
+					</div>
+
+					<!-- footer tabs -->
+					<div class="w-full mt-2">
+						<ul class="flex tracking-tight items-baseline text-center justify-between">
+							<li class="tap tap-active">
+								Tweets
+							</li>
+							<li class="tap">
+								Tweets & replies
+							</li>
+							<li class="tap">
+								Media
+							</li>
+							<li class="tap">
+								Likes
+							</li>
+						</ul>
+					</div>
+
+					<!-- retweet card header -->
+					<div class="mt-2 ml-12">
+						<div>
+							<i class="text-xs text-gray-700 fas fa-retweet"></i>
+							<a class="text-sm tracking-tight font-normal text-gray-600 " href="#">Tailwind CSS Retweeted</a>
+						</div>
+					</div>
+					<!-- Retweet Card -->
+					<div class="flex justify-between">
+						<!-- avatar -->
+						<div class="ml-2 w-28 pr-2">
+							<img class="relative h-10 object-cover shadow-md rounded-full" src="./img/logo.jpg" alt="avatar" />
+						</div>
+
+						<!-- info -->
+						<div class="mt-1">
+							<div class="flex items-center ">
+								<h3><a class="text-gray-900 hover:no-underline text-base font-bold" href="#">Tailwind CSS</a></h3>
+								<a class="ml-1 text-gray-600  text-sm font-normal leading-3" href="#">@tailwindcss</a>
+
+								<a class="ml-1 text-gray-600  text-sm font-normal leading-3" href="#">&bull; Mar 2</a>
+							</div>
+
+							<p class="mt-1 tracking-normal leading-tight text-xs text-gray-800">
+								Last week we finally opened up the doors to Tailwind UI — a library of professionally designed, fully
+								responsive HTML components crafted by the us, the Tailwind team! <br /><br />It’s a great way to support
+								the framework Red heart
+							</p>
+
+							<!-- post link details -->
+							<div class="flex flex-wrap pb-2 border border-indigo-200 mt-3 rounded-lg overflow-hidden mr-4">
+								<img class="shadow-md" src="./img/post-image.png" alt="Post Image" />
+
+								<a class="ml-2 mt-2 w-full text-gray-700 text-sm font-normal leading-snug" href="#">Tailwind UI</a>
+								<span class="ml-2 mt-1 w-full text-gray-700 text-sm font-normal leading-tight"
+									>Beautiful UI components by the creator of Tailwind CSS</span
+								>
+
+								<span class=" ml-2 -mt-1"
+									><i class="text-sm text-gray-500 far fa-link"></i>
+									<a class=" text-gray-700 text-sm font-normal leading-tight" href="#">Tailwind UI</a></span
+								>
+							</div>
+
+							<!-- footer -->
+							<div class="flex mt-2 justify-between items-baseline text-center">
+								<div class="w-full ">
+									<i class="text-xs text-gray-600 fal fa-comment"></i><span class="text-xs ml-1 text-gray-600">37</span>
+								</div>
+								<div class="w-full ">
+									<i class="text-xs text-gray-600 fas fa-retweet"></i
+									><span class="text-xs ml-1 text-gray-600">434</span>
+								</div>
+								<div class="w-full ">
+									<i class="text-xs text-gray-600 fal fa-heart"></i><span class="text-xs ml-1 text-gray-600">8</span>
+								</div>
+								<div class="w-full "><i class="text-xs text-gray-600 far fa-arrow-from-bottom"></i></div>
+							</div>
+						</div>
+					</div>
+
+					<!-- What to follow Card -->
+					<div class="flex flex-col mt-5 h-full  border-t-8 border-b border-gray-300">
+						<!-- head -->
+						<div class="w-full  p-3 ml-3 border-b border-gray-400">
+							<span class="font-extrabold tracking-normal text-gray-900 text-base ">Who to follow</span>
+						</div>
+						<!-- inner card -->
+						<div class="flex hover:bg-gray-200 justify-between items-start p-1 border-b border-gray-100">
+							<!-- avatar -->
+							<div class="ml-2 mt-5 w-28">
+								<img class="relative h-10  object-cover shadow-md rounded-full" src="./img/logo.jpg" alt="avatar" />
+							</div>
+
+							<!-- info -->
+							<div class="mt-1 p-2">
+								<div class="flex justify-between items-baseline">
+									<h3 class="flex flex-col justify-start">
+										<a class="text-gray-900 hover:no-underline text-base font-bold" href="#">Tailwind CSS</a>
+										<a class=" text-gray-600  text-sm font-normal leading-3" href="#">@tailwindcss</a>
+									</h3>
+
+									<a class="btn font-bold hover:no-underline text-xs px-4 py-1" href="">Follow</a>
+								</div>
+
+								<p class="mt-1 tracking-normal leading-tight text-xs text-gray-800">
+									Last week we finally opened up the doors to Tailwind UI — a library of professionally designed, fully
+									responsive HTML components crafted by the us, the Tailwind team! <br /><br />It’s a great way to
+									support the framework Red heart
+								</p>
+							</div>
+						</div>
+						<!-- inner card -->
+						<div class="flex hover:bg-gray-200 justify-between items-start p-1 border-b border-gray-100">
+							<!-- avatar -->
+							<div class="ml-2 mt-5 w-28">
+								<img class="relative h-10  object-cover shadow-md rounded-full" src="./img/logo.jpg" alt="avatar" />
+							</div>
+
+							<!-- info -->
+							<div class="mt-1 p-2">
+								<div class="flex justify-between items-baseline">
+									<h3 class="flex flex-col justify-start">
+										<a class="text-gray-900 hover:no-underline text-base font-bold" href="#">Tailwind CSS</a>
+										<a class=" text-gray-600  text-sm font-normal leading-3" href="#">@tailwindcss</a>
+									</h3>
+
+									<a class="btn font-bold hover:no-underline text-xs px-4 py-1" href="">Follow</a>
+								</div>
+
+								<p class="mt-1 tracking-normal leading-tight text-xs text-gray-800">
+									Last week we finally opened up the doors to Tailwind UI — a library of professionally designed, fully
+									responsive HTML components crafted by the us, the Tailwind team! <br /><br />It’s a great way to
+									support the framework Red heart
+								</p>
+							</div>
+						</div>
+						<!-- inner card -->
+						<div class="flex hover:bg-gray-200 justify-between items-start p-1 border-b border-gray-100">
+							<!-- avatar -->
+							<div class="ml-2 mt-5 w-28">
+								<img class="relative h-10  object-cover shadow-md rounded-full" src="./img/logo.jpg" alt="avatar" />
+							</div>
+
+							<!-- info -->
+							<div class="mt-1 p-2">
+								<div class="flex justify-between items-baseline">
+									<h3 class="flex flex-col justify-start">
+										<a class="text-gray-900 hover:no-underline text-base font-bold" href="#">Tailwind CSS</a>
+										<a class=" text-gray-600  text-sm font-normal leading-3" href="#">@tailwindcss</a>
+									</h3>
+
+									<a class="btn font-bold hover:no-underline text-xs px-4 py-1" href="">Follow</a>
+								</div>
+
+								<p class="mt-1 tracking-normal leading-tight text-xs text-gray-800">
+									Last week we finally opened up the doors to Tailwind UI — a library of professionally designed, fully
+									responsive HTML components crafted by the us, the Tailwind team! <br /><br />It’s a great way to
+									support the framework Red heart
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End of Main Area -->
+
+			<!-- Right Side -->
+			<div style="height: 300vh;" class="right-side xs:hidden  md:block bg-white">
+				<!-- sticky search box -->
+				<div class="z-10 sticky top-0 mt-2 h-12 bg-white xs:hidden  lg:block">
+					<div
+						style="flex-basis:80%; min-width: 14rem; max-width: 80%;"
+						class="flex  mx-3 justify-start  h-8 bg-gray-200 w-full focus-within:border focus-within:bg-white focus-within:text-brand focus-within:border-blue-500 items-center rounded-full overflow-hidden "
+					>
+						<!-- search icon -->
+						<i class="ml-3  font-semibold text-base text-gray-500 focus: far fa-search"></i>
+
+						<input
+							placeholder="Search Twitter"
+							class="appearance-none font-normal placeholder-gray-600 text-xs outline-none p-1 ml-2  bg-transparent"
+							type="text"
+							name="search"
+						/>
+
+						<!-- cross -->
+						<!-- <i
+                            class="ml-2 p-1 overflow-hidden w-6 text-center text-base font-light bg-blue-400 text-white hover:bg-blue-500 rounded-full fal fa-times"
+                        ></i> -->
+					</div>
+				</div>
+
+				<!-- wrapper -->
+				<div
+					style="flex-basis:80%; min-width: 14rem; max-width: 80%;"
+					class=" flex-grow mx-3 flex flex-col xs:hidden  lg:flex"
+				>
+					<!-- 6 image table -->
+					<div
+						class="flex flex-col flex-shrink w-full justify-between items-stretch rounded-xl  border shadow-md overflow-hidden "
+					>
+						<!-- First row -->
+						<div class="flex h-1/2 flex-wrap justify-between">
+							<img
+								class="border w-1/3 laptop:h-20 md:h-17 align-middle border-gray-100 inline-block object-cover"
+								src="./img/img1.jpg"
+							/>
+							<img
+								class="border w-1/3 laptop:h-20 md:h-17 align-middle border-gray-100 inline-block object-cover"
+								src="./img/img2.jpg"
+							/>
+							<img
+								class="border w-1/3 laptop:h-20 md:h-17 align-middle border-gray-100 inline-block object-cover"
+								src="./img/img3.jpg"
+							/>
+						</div>
+
+						<!-- Second Row -->
+						<div class="flex h-1/2  flex-wrap justify-between">
+							<img
+								class="border w-1/3 laptop:h-20 md:h-17 align-middle border-gray-100 inline-block object-cover"
+								src="./img/img4.jpg"
+							/>
+							<img
+								class="border w-1/3 laptop:h-20 md:h-17 align-middle border-gray-100 inline-block object-cover"
+								src="./img/img5.jpg"
+							/>
+							<img
+								class="border w-1/3 laptop:h-20 md:h-17 align-middle border-gray-100 inline-block object-cover"
+								src="./img/img6.jpg"
+							/>
+						</div>
+					</div>
+
+					<!-- you might like card -->
+					<div class="flex flex-wrap bg-gray-100 mt-3 w-full  rounded-md shadow-md border border-blue-100">
+						<!-- head -->
+						<div class="w-full p-2 border-b border-gray-400">
+							<span class="font-extrabold tracking-normal text-gray-900 text-base ">You might like</span>
+						</div>
+
+						<!-- card -->
+						<div
+							class="flex hover:bg-gray-200 flex-wrap justify-between items-center p-1 py-2 w-full border-b border-gray-300"
+						>
+							<div class="flex flex-wrap  items-center ">
+								<img class="h-10 rounded-full" src="./img/user-image1.jpg" />
+
+								<div class="ml-1 flex flex-col text-justify">
+									<a class="text-sm text-gray-900 font-bold">Sara Jay</a>
+									<span class="text-sm text-gray-600">@sarajay</span>
+								</div>
+							</div>
+							<!-- button -->
+							<a class="btn font-bold hover:no-underline text-xs px-4 py-1" href="">Follow</a>
+						</div>
+						<!-- card -->
+						<div
+							class="flex flex-wrap hover:bg-gray-200 justify-between items-center p-1 py-2 w-full border-b border-gray-300"
+						>
+							<div class="flex flex-wrap  items-center ">
+								<img class="h-10 rounded-full" src="./img/user-image2.jpg" />
+
+								<div class="ml-1 flex flex-col text-justify">
+									<a class="text-sm text-gray-900 font-bold">Dan Abramov</a>
+									<span class="text-sm text-gray-600">@dan_ador</span>
+								</div>
+							</div>
+							<!-- button -->
+							<a class="btn font-bold hover:no-underline text-xs px-4 py-1" href="">Follow</a>
+						</div>
+						<!-- card -->
+						<div
+							class="flex flex-wrap hover:bg-gray-200 justify-between items-center p-1 py-2 w-full border-b border-gray-300"
+						>
+							<div class="flex flex-wrap  items-center ">
+								<img class="h-10 rounded-full" src="./img/user-image3.jpg" />
+
+								<div class="ml-1 flex flex-col text-justify">
+									<a class="text-sm text-gray-900 font-bold">Gatsby</a>
+									<span class="text-sm text-gray-600">@gatsby</span>
+								</div>
+							</div>
+							<!-- button -->
+							<a class="btn font-bold hover:no-underline text-xs px-4 py-1" href="">Follow</a>
+						</div>
+
+						<div href="#" class="hover:bg-gray-200 p-1 py-2 w-full border-b border-gray-300">
+							<a href="#" class="ml-2 text-xs hover:no-underline">Show more</a>
+						</div>
+					</div>
+
+					<!-- trends for you -->
+					<div class="flex flex-col ">
+						<!-- you might like card -->
+						<div class="flex flex-wrap bg-gray-100 mt-3 w-full  rounded-md shadow-md border border-blue-100">
+							<!-- head -->
+							<div class="w-full p-2 flex border-b border-gray-400 justify-between items-baseline">
+								<span class="font-extrabold tracking-normal text-gray-900 text-base ">You might like</span>
+
+								<a class="hover:no-underline" href=""><i class="fal fa-cog"></i></a>
+							</div>
+
+							<!-- trend info col -->
+							<div class="flex  flex-col justify-between items-center   w-full border-b border-gray-300">
+								<!-- trend info card -->
+								<div class="flex p-2 flex-col w-full hover:bg-gray-200">
+									<div class="self-start">
+										<a href="#" class="text-sm  hover:no-underline text-gray-600">Trending in Egypt</a>
+									</div>
+
+									<div class="self-end">
+										<a href="#" class="text-sm hover:no-underline text-gray-900 font-bold">#WhatsApp</a>
+									</div>
+
+									<div class="self-start">
+										<a href="#" class="hover:no-underline text-sm text-gray-600">56.2K Tweets</a>
+									</div>
+								</div>
+
+								<!-- trend info card -->
+								<div class="flex p-2 flex-col w-full hover:bg-gray-200">
+									<div class="self-start">
+										<a href="#" class="text-sm  hover:no-underline text-gray-600">Trending in Egypt</a>
+									</div>
+
+									<div class="self-end">
+										<a href="#" class="text-sm hover:no-underline text-gray-900 font-bold">#WhatsApp</a>
+									</div>
+
+									<div class="self-start">
+										<a href="#" class="hover:no-underline text-sm text-gray-600">56.2K Tweets</a>
+									</div>
+								</div>
+
+								<!-- trend info card -->
+								<div class="flex p-2 flex-col w-full hover:bg-gray-200">
+									<div class="self-start">
+										<a href="#" class="text-sm  hover:no-underline text-gray-600">Trending in Egypt</a>
+									</div>
+
+									<div class="self-end">
+										<a href="#" class="text-sm hover:no-underline text-gray-900 font-bold">#WhatsApp</a>
+									</div>
+
+									<div class="self-start">
+										<a href="#" class="hover:no-underline text-sm text-gray-600">56.2K Tweets</a>
+									</div>
+								</div>
+
+								<!-- trend info card -->
+								<div class="flex p-2 flex-col w-full hover:bg-gray-200">
+									<div class="self-start">
+										<a href="#" class="text-sm  hover:no-underline text-gray-600">Trending in Egypt</a>
+									</div>
+
+									<div class="self-end">
+										<a href="#" class="text-sm hover:no-underline text-gray-900 font-bold">#WhatsApp</a>
+									</div>
+
+									<div class="self-start">
+										<a href="#" class="hover:no-underline text-sm text-gray-600">56.2K Tweets</a>
+									</div>
+								</div>
+
+								<!-- trend info card -->
+								<div class="flex p-2 flex-col w-full hover:bg-gray-200">
+									<div class="self-start">
+										<a href="#" class="text-sm  hover:no-underline text-gray-600">Trending in Egypt</a>
+									</div>
+
+									<div class="self-end">
+										<a href="#" class="text-sm hover:no-underline text-gray-900 font-bold">#WhatsApp</a>
+									</div>
+
+									<div class="self-start">
+										<a href="#" class="hover:no-underline text-sm text-gray-600">56.2K Tweets</a>
+									</div>
+								</div>
+
+								<div href="#" class="hover:bg-gray-200 p-1 py-2 w-full border-b border-gray-300">
+									<a href="#" class="ml-2 text-xs hover:no-underline">Show more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- footer links -->
+					<div class="flex mt-3 flex-wrap">
+						<a href="#" class="text-sm text-gray-600 px-1">Terms</a>
+						<a href="#" class="text-sm text-gray-600 px-1">Privacy policy</a>
+						<a href="#" class="text-sm text-gray-600 px-1">Cookies</a>
+						<a href="#" class="text-sm text-gray-600 px-1">Adds Info</a>
+						<a href="#" class="text-sm text-gray-600 px-1">More</a>
+						<a class="text-sm text-gray-600 px-1 hover:no-underline">© 2020 Twitter, Inc.</a>
+					</div>
+				</div>
+				<!-- End of Right Side -->
+			</div>
+		</div>
+		<!-- /app -->
+	</body>
+</html>
