@@ -3,8 +3,7 @@ module.exports = {
 		require('tailwindcss'),
 		require('autoprefixer')({
 			overrideBrowserslist: [
-			  "> 0.3%",
-			  "last 7 versions",
+			"last 7 versions",
 			 "Android >= 4", 
 			 "Firefox >= 20", 
 			 "iOS >= 7",
