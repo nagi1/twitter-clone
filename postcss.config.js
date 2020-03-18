@@ -2,12 +2,13 @@ module.exports = {
 	plugins: [
 		require('tailwindcss'),
 		require('autoprefixer')({
-			browsers: [
+			overrideBrowserslist: [
 			  "> 0.3%",
 			  "last 7 versions",
 			 "Android >= 4", 
 			 "Firefox >= 20", 
-			 "iOS >= 7"
+			 "iOS >= 7",
+			 "Safari >= 8"
 			],
 		   flexbox: true,
 		  }),
